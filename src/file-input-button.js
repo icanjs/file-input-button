@@ -80,7 +80,8 @@ can.Component.extend({
       let files = this.viewModel.attr('files'),
         newlySelectedFiles = this.viewModel.attr('fileInput')[0].files;
 
-      newlySelectedFiles.forEach((file, index) => {
+      for (var i = 0; i < newlySelectedFiles.length; i++) {
+        let file = newlySelectedFiles[i];
         let item = new can.Map({
           name: file.name,
           size: file.size,
@@ -90,7 +91,7 @@ can.Component.extend({
           file: file
         });
         files.push(item);
-      });
+      }
     }
   }
 });
