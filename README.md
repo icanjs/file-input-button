@@ -1,4 +1,4 @@
-# <file-input-button>
+# `<file-input-button>`
 A custom Component that wraps a file input and lets you live bind to its selected files.
 
 [![npm version](https://badge.fury.io/js/file-input-button.svg)](https://badge.fury.io/js/file-input-button)
