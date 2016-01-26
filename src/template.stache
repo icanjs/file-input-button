@@ -1,0 +1,7 @@
+{{^if noUi}}
+  <button ($click)="selectFiles()" class="{{buttonClass}}">{{#if buttonLabel}} {{buttonLabel}} {{else}} Select Files {{/if}}</button>
+{{/if}}
+<input type="file" {{#if multiple}}multiple{{/if}}/>
+<content>
+  <!-- You can use the no-ui option and use your own button with click handler. -->
+</content>

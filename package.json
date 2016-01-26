@@ -1,0 +1,56 @@
+{
+  "name": "file-input-button",
+  "version": "0.1.0",
+  "description": "A Component that wraps a file input and lets you live bind to its selected files.",
+  "main": "src/file-input-button.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "publish": "git push origin && git push origin --tags",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish",
+    "jshint": "jshint src/file-input-button.js",
+    "testee": "testee tests/test.html --browsers firefox",
+    "test": "npm run jshint && npm run testee",
+    "build": "steal-tools build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://marshallswain@github.com/icanjs/file-input-button.git"
+  },
+  "keywords": [
+    "canjs",
+    "stache"
+  ],
+  "author": "Marshall Thompson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/icanjs/file-input-button/issues"
+  },
+  "homepage": "https://github.com/icanjs/file-input-button",
+  "system": {
+    "main": "file-input-button",
+    "npmIgnore": [
+      "documentjs"
+    ],
+    "transpiler": "babel",
+    "directories": {
+      "lib": "src"
+    }
+  },
+  "dependencies": {
+    "can": "*",
+    "jquery": "2.1.4"
+  },
+  "devDependencies": {
+    "jshint": "^2.8.0",
+    "ramda": "^0.18.0",
+    "steal": "^0.12.3",
+    "steal-qunit": "^0.1.1",
+    "steal-tools": "^0.12.1",
+    "testee": "^0.2.2"
+  },
+  "jshintConfig": {
+    "esnext": true
+  }
+}
