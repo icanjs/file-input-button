@@ -1,6 +1,6 @@
 {
   "name": "file-input-button",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A Component that wraps a file input and lets you live bind to its selected files.",
   "main": "src/file-input-button.js",
   "scripts": {
